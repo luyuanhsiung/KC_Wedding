@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  
+  <body>
+  <div align="center">
+  <iframe src="https://h.eqxiu.com/s/2pZAkNuO" id="mainiframe" width="320" height="485" frameborder="1" align="middle"></iframe>
+  </div>
+  <!--https://h.eqxiu.com/s/2pZAkNuO-->
+  </body>
+  <script language="javascript" type="text/javascript"> 
+  function changeFrameHeight(){
+    var ifm= document.getElementById("mainiframe");
+    ifm.height=document.documentElement.clientHeight - 50;
+  }
+  
+  function is_mobile() {
+    var regex_match = /(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;
+    var u = navigator.userAgent;
+    
+    if (null == u) {
+    return true;
+    }
+    var result = regex_match.exec(u);
+    if (null == result) {
+      return false
+    } else {
+      return true
+    }
+  
+  }
+  
+  if (is_mobile()) {
+    location.href = 'https://h.eqxiu.com/s/2pZAkNuO';
+  }else {
+   //location.href = 'https://h.eqxiu.com/s/2pZAkNuO';
+    //window.onresize=function(){ changeFrameHeight();}
+    //$(function(){changeFrameHeight();});
+  }
+  //var iframe = document.getElementById('iframe').contentWindow;
+  //iframe.postMessage('message', 'https://iframe.tw');
+  </script>
+</html>
